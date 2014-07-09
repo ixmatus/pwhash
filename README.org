@@ -1,3 +1,14 @@
 * Welcome!
   Quick and dirty CLI tool for retrieving a random salt, asking for
   your password, and hashing it.
+
+  This tool requests a twenty character randomized string from
+  https://random.org. It then asks you for your password, hashes it,
+  and prints out the salt and the hash.
+
+** Install
+   =sudo cp pwhash /usr/local/bin=
+   =sudo chmod +x /usr/local/bin/pwhash=
+
+** To use
+   =pwhash=
