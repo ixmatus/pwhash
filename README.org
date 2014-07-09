@@ -1,0 +1,3 @@
+* Welcome!
+  Quick and dirty CLI tool for retrieving a random salt, asking for
+  your password, and hashing it.
