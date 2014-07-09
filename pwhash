@@ -10,5 +10,4 @@ salt = urllib2.urlopen(
 
 hs = crypt.crypt(getpass.getpass(), "$6${}".format(salt))
 
-print("Salt: {}".format(salt))
-print("Hash: {}".format(hs))
+print("Salt: {}Hash: {}".format(salt, hs))
