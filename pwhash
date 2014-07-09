@@ -8,4 +8,7 @@ print("Getting a random salt from random.org...")
 salt = urllib2.urlopen(
     "https://www.random.org/strings/?num=1&len=20&digits=on&upperalpha=on&loweralpha=on&unique=on&format=plain&rnd=new").read()
 
-print(crypt.crypt(getpass.getpass(), "$6${}".format(salt)))
+hs = crypt.crypt(getpass.getpass(), "$6${}".format(salt))
+
+print("Salt: {}".format(salt))
+print("Hash: {}".format(hs))
